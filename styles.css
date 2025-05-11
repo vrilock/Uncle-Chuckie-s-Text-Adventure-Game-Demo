@@ -1,0 +1,162 @@
+/*Vrilock CSS Style Sheet revision of Uncle Chuckie Game*/ 
+/*Style CSS revised by Tom Vrilock December 2023*/ 
+
+    .gameName {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 2em;
+        color: #21a165;
+        background: linear-gradient(135deg, #ececec 0%, #c9c9c9 50%, #ececec 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+    }
+
+    body { 
+        background-color: #030303ec;
+        color: #d6d5d3;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 5px;
+        padding: 20px;
+        border-color: #f9bb2a;
+        border-radius: 3px;
+        border-style: double;
+    }
+    #startScreen {
+        text-align: center;
+    }
+    #introContent, #game {
+        display: none;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .button {
+        margin: 10px;
+    }
+    #scoreDisplay {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+
+body { 
+
+    background-color: #030303ec;
+    color: #d6d5d3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 5px;
+    padding: 20px;
+    border-color: #f9bb2a;
+    border-radius: 3px;
+    border-style: double;
+    a:hover {
+        cursor: pointer;
+    }
+        text-decoration: none;
+    }
+/*CSS for the game window, RWD Design*/
+    style ::-webkit-search-results-decoration { display: none; } ::-webkit-search-decoration { display: none; } ::-webkit-inner-spin-button { display: none; } ::-webkit-outer-spin-button { display: none; } ::-webkit-search-cancel-button { display: none; } ::-webkit-search-results-button { display: none; } ::-webkit-input-placeholder { color: #999; } ::-webkit-file-upload-button { background: #043811; border: 1px solid #aaa; border-radius: 2px; color: #f9f7f7; font-family: sans-serif; font-size: 12px; padding: 2px 6px; } ::-webkit-input-placeholder { color: #999; } ::-webkit-file-upload-button { background: #ccc; border: 1px solid #aaa; border-radius: 2px; color: #555; font-family: sans-serif; font-size: 12px; padding: 2px 6px; } ::-webkit-input-placeholder { color: #999; } ::-webkit-file-upload-button { background: #ccc; border: 1px solid #aaa; border-radius: 2px; color: #555; font-family: sans-serif; font-size: 12px; padding: 2px 6px; } ::-webkit-input-placeholder { color: #999; } ::-webkit-file-upload-button { background: #ccc; border: 1px solid #aaa; border-radius: 2px; color: #555; font-family: sans-serif; font-size: 12px; padding: 2px 6px; } ::-webkit-input-placeholder { color: #999; } ::-webkit-file-upload-button { background: #100c0c; border: 1px solid #aaa; border-radius: 2px; color: #555; font-family: sans-serif; font-size: 12px; padding: 2px 6px; } ::-webkit-input-placeholder { color: #999; } ::-webkit-file-upload-button { background: #ccc; border: 1px solid #aaa; border-radius: 2px; color: #555; font-family: sans-serif; font-size: 12px; padding: 2px 6px; } ::-webkit-input-placeholder { color: #999; } ::-webkit-pload-button { background: #ccc; border: 
+}
+/*add button for text links to the game*/  
+
+
+a.squiffy-link
+{
+
+
+    button,
+    a.squiffy-link {
+        background-color: #100c0c;
+        border: 1px solid #f4cb5d;
+        border-radius: 2px;
+        color: #e8ca06;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        padding: 2px 6px;
+        text-decoration: underline;
+        cursor: hand;
+        margin: 10px;
+    
+
+    }
+    .element { 
+        animation: border-flash 30s 7;
+        border: 1px solid gold;
+        animation: border-flash on mouseover;
+        animation: fade-in 5s ease-in;
+        animation: border-spin 5s linear infinite;
+    
+}
+.boujee-text {
+    /* Your styles for .boujee-text */
+
+        font-size: clamp(3rem, 25vmin, 8rem);
+        background: linear-gradient(90deg, var(color:gold), var(color:white), var(color:gold)) 0 0 / 400% 100%;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: move-bg 8s infinite linear;
+    } 
+    
+    @keyframes move-bg {
+        to {
+            background-position: 400% 0;
+        }
+    }
+  
+
+    background-color: #0e0e0e;
+    border: 0.1em solid #e0b54f;
+    border-radius: 0.1em;
+    color: #f9f8f8;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 2px 6px;
+}
+}
+a.squiffy-link.disabled
+{
+    text-decoration: inherit;
+    color: inherit !important;
+    cursor: inherit;
+}
+a.squiffy-header-link
+{
+    text-decoration: underline;
+    color: Blue;
+    cursor: pointer;
+}
+div#squiffy-container
+{ 
+    width: 100%; /* 700px; max, match game window*/
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+div#squiffy-header
+{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 1px;
+
+}
+div#squiffy
+{
+    font-size: 18px;
+}
+hr {horizontal line;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(210, 185, 73, 0.3);
+    margin-top: 16px; margin-bottom: 16px;
+}

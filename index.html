@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Uncle Chuckie's Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--div id="music" has been disabled for now-->
+<!--    <audio controls>
+        <source src="music/cwcMusic1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+<div id="audio-controls">
+    <button id="seek-bar" type="range" min="0" value="0" step="1"></button>
+</div> -->
+    
+
+<body>
+    <audio id="myAudio" autoplay loop>
+        <source src="music/cwcMusic1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="muteButton">Mute</button>
+
+
+    <h1 class="gameName" type="title">Uncle Chuckie Text Adventure</h1>
+
+    <article> Demo written by Tom Vrilock.</article>
+    <article> Illustration by Lady K.A.</article>
+    <button id="restart">Restart</button>
+    <p id="gameText"></p>
+    <div id="scoreDisplay">Score: 0</div>
+ 
+    <div id="startScreen">
+        <div id="imageWrapper">
+            <img id="initialImage" src="images/ChuckInColor.png" alt="Uncle Chuckie in Color" height="200px">
+        </div>
+        <button id="startGameButton" class="button">Start Game</button>
+        <p id="introText" class="boujee-text">Blood and Souls for Uncle Chuckie!</p>
+    </div>
+    
+    <div id="introContent">
+        <p id="introParagraph" class="boujee-text">
+            Welcome to the world of Uncle Chuckie! You play Uncle Chuckie back in his old town in Illinois! 
+            So, anyway, you're going to be figuring out how to keep Uncle Chuckie happy, safe, and... not bored. Chuck is real dangerous when he gets bored. So, keep 
+            the magick high! Let's go already!
+        </p>
+        <button id="startAdventureButton" class="button" style="visibility: hidden;">Start the adventure</button>
+    </div>
+    
+    <div id="game">
+        <img id="sceneImage" src="" alt="Scene Image" style="width: 100%; max-height: 300px; display: none;">
+        <p id="storyText">Loading...</p>
+        <div id="choices"></div>
+    </div>
+    
+<script src="renderer.js"></script>
+
+<!--I am temporarily removing this code from the index file, as renderer.js should handle this script...<script>
+    let score = 0;
+    const gameText = document.getElementById("gameText");
+    const scoreDisplay = document.getElementById("scoreDisplay");
+    const sceneImage = document.getElementById("sceneImage");
+    let scenes = {};
+
+    function updateScore(points) {
+        score += points;
+        scoreDisplay.textContent = `Score: ${score}`;
+    }
+
+    document.getElementById("restart").onclick = function() {
+        score = 0;
+        updateScore(0);
+        gameText.textContent = "Game reset. Score: 0";
+        document.getElementById('game').style.display = 'none';
+        document.getElementById('introContent').style.display = 'none';
+        document.getElementById('startScreen').style.display = 'block';
+        document.getElementById('startGameButton').style.display = 'block';
+        document.getElementById('introText').style.display = 'block';
+    };
+
+    fetch('scenes.json')
+        .then(response => response.json())
+        .then(data => {
+            scenes = data.scenes;
+        })
+        .catch(error => console.error('Error loading scenes:', error));
+
+    function goToScene(sceneName) {
+        console.log("scene name:", sceneName);
+        const scene = scenes[sceneName];
+        if (!scene) return;
+
+        // Update score
+        if (scene.choices && scene.choices.length > 0) {
+            updateScore(5);
+            gameText.textContent = "Good choice! +5 points";
+        } else {
+            gameText.textContent = "";
+        }
+
+        // Update story text
+        document.getElementById('storyText').innerText = scene.text;
+
+        // Update image
+        if (scene.image) {
+            sceneImage.src = scene.image.src;
+            sceneImage.alt = scene.image.alt;
+            sceneImage.style.display = 'block';
+        } else {
+            sceneImage.style.display = 'none';
+        }
+
+        function updateScene(scene) {
+    document.getElementById('scene-text').textContent = scene.text;
+    document.getElementById('scene-image').src = scene.image.src;
+    document.getElementById('scene-image').alt = scene.image.alt;
+    // Render buttons for choices
+}
+
+
+        // Update choices
+        const choicesDiv = document.getElementById('choices');
+        choicesDiv.innerHTML = '';
+
+        if (scene.choices) {
+            scene.choices.forEach(choice => {
+                const button = document.createElement('button');
+                button.innerText = choice.button;
+                button.className = 'button';
+                button.onclick = () => goToScene(choice.action);
+                choicesDiv.appendChild(button);
+            });
+        }
+    }
+
+    document.getElementById('startGameButton').addEventListener('click', function () {
+    document.getElementById('startGameButton').style.display = 'none';
+    document.getElementById('introText').style.display = 'none';
+    document.getElementById('startScreen').style.display = 'none';
+    document.getElementById('introContent').style.display = 'block';
+    
+    // Check if scenes are loaded
+    if (Object.keys(scenes).length > 0) {
+        document.getElementById('startAdventureButton').style.visibility = 'visible';
+    } else {
+        gameText.textContent = "Loading scenes... Please wait.";
+        // Check every 500ms if scenes are loaded
+        const intervalId = setInterval(() => {
+            if (Object.keys(scenes).length > 0) {
+                document.getElementById('startAdventureButton').style.visibility = 'visible';
+                clearInterval(intervalId);
+                gameText.textContent = ""; // Clear the loading message
+            }
+        }, 500);
+    }
+});
+
+    document.getElementById('startAdventureButton').addEventListener('click', function () {
+        document.getElementById('introContent').style.display = 'none';
+        document.getElementById('game').style.display = 'block';
+        goToScene('introScene');
+    });
+</script>-->
+
+</body>
+</html>

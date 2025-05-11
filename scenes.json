@@ -1,0 +1,149 @@
+{
+  "introScene": {
+    "text": "Welcome to my world—I am Uncle Chuckie, the master of magick and mischief!",
+    "image": "images/introScene.jpg",
+    "choices": [
+      { "button": "Begin my reign", "action": "mirrorScene" }
+    ]
+  },
+  "mirrorScene": {
+    "text": "I gaze into the mirror and proclaim, “I am greater than all other men!” My incantation echoes through the glass, but the reflection staring back catches me off guard. I’m an old man now—years have slipped by like shadows. My keen mind remains sharp as ever, but my body? It’s weathered more than I care to admit. The white cap of hair framing the bald spot, the sagging slacks—it’s undeniable. Something’s been draining me. The food? No, that cursed job I took. It’s aged me, yet my spirit burns as fiercely as ever. Or does it? Wait—since when do I critique myself like this? I’m not amused by these intrusive doubts. Suddenly, the phone rings, snapping me out of this nonsense...",
+    "image": "images/mirrorScene.jpg",
+    "choices": [
+      { "button": "Answer the phone", "action": "phoneCallScene" },
+      { "button": "Smash the mirror", "action": "mirrorDoomScene" }
+    ]
+  },
+  "mirrorDoomScene": {
+    "text": "In a burst of fury, I smash the mirror with my fist. Glass shatters everywhere, and a jagged shard slashes my wrist deep. Blood gushes out—damn it, an artery. The room spins as I stumble back, my vision fading. I, Uncle Chuckie, felled by my own temper? Pathetic. Boredom would’ve been a kinder fate than this bloody end. Game Over!",
+    "image": {
+      "src": "scene2Image.png",
+      "alt": "Scene 2 Image"
+    },
+    "choices": []
+  },
+  "phoneCallScene": {
+    "text": "I snatch up the phone, and it’s my apprentice on the line. “About time, Chuckie! I’ve got a mission for you!” the fool says, as if he could command me. Still, I’m intrigued—what chaos can I unleash today?",
+    "image": {
+      "src": "scene3Image.png",
+      "alt": "Scene 3 Image"
+    },
+    "choices": [
+      { "button": "Take on the mission", "action": "missionScene" },
+      { "button": "Tell the apprentice to shove it", "action": "chuckieDoomScene" }
+    ]
+  },
+  "chuckieDoomScene": {
+    "text": "I growl into the phone, “Shove it, you insolent whelp! I’m done with your orders!” Silence follows, then a low chuckle from the apprentice. The floor quakes beneath me—a rift tears open. My own magick, turned against me by that brat’s insolence! Dark tentacles lash out, dragging me into an abyss of torment. Disrespecting Uncle Chuckie was his last mistake—and mine for answering. Game Over!",
+    "image": {
+      "src": "scene4Image.png",
+      "alt": "Scene 4 Image"
+    },
+    "choices": []
+  },
+  "missionScene": {
+    "text": "The apprentice babbles, “Deal with some annoying neighbors, Chuckie. Keep it magickal!” I slam the phone down, already plotting. Just as I’m savoring the possibilities, it rings again—this time from that wretched office job I’ve been slumming at.",
+    "image": {
+      "src": "scene5Image.png",
+      "alt": "Scene 5 Image"
+    },
+    "choices": [
+      { "button": "Answer the phone", "action": "coworkerCallScene" }
+    ]
+  },
+  "coworkerCallScene": {
+    "text": "It’s Carla, that dimwit from the realtor’s office. “Yes, Carla, I get it,” I mutter as she drones on about giving me Friday off. New recruits have a meeting, but I’m not needed—perfect. A day to scheme in peace, away from that egocentric boss and useless secretary. I’m already imagining a quiet evening with a book, maybe a pizza and a classic film. Ah, maybe I can remote view my neighbor's sister inlaw. No, but she's no Farrah Fawcett, believe me. My how the times have changed. Perhaps I will after all take up removing my pupil's neighbors. That should be worth at least a laugh. No, I've been working too hard. I need to relax and read some old magick books. A rare moment of calm for Uncle Chuckie—until...",
+    "image": {
+      "src": "scene6Image.png",
+      "alt": "Scene 6 Image"
+    },
+    "choices": [
+      { "button": "Continue", "action": "noiseScene" }
+    ]
+  },
+  "noiseScene": {
+    "text": "A vile racket shakes my house to its core. I freeze, senses reeling. Blaaaam! There it is again—an electric guitar, screeching from next door. That idiot kid is tuning it up, and then—drums! My windows rattle as the noise assaults me. The adolescent spawn of Bernie thinks he’s a musician despite all my wisdom ignored. “They must be purged!” I roar, my patience obliterated.",
+    "image": {
+      "src": "scene7Image.png",
+      "alt": "Scene 7 Image"
+    },
+    "choices": [
+      { "button": "Continue", "action": "optionsScene" }
+    ]
+  },
+  "optionsScene": {
+    "text": "My blood boils as I weigh my options. I could grab a rocket launcher and erase that fool Bernie and his noisy brat—or perhaps something subtler? Bernie’s been decent enough, pushing my car out of snow and sharing crabgrass-killing tips, but his kid? A rock band in the garage next to my sanctum! I’d have sold the whelp for experiments years ago. Storming over with pistol and knife feels right—my old tools of the trade still sing to me. A Boeing crash might be excessive, though, and tank my property value. Total vampirism would be poetic justice! As the noise drowns out even the jets overhead, I fight the urge to charge out. Then it hits me—my radionics and sigils! A slower burn, but effective. Or should I just tip off the cops anonymously? No, Bernie’d trace it back to me. Time to choose, Chuckie.",
+    "image": {
+      "src": "scene8Image.png",
+      "alt": "Scene 8 Image"
+    },
+    "choices": [
+      { "button": "Deploy radionics", "action": "radionicsScene" },
+      { "button": "Storm in with weapons", "action": "weaponsDoomScene" },
+      { "button": "Order that rocket launcher", "action": "rocketDoomScene" }
+    ]
+  },
+  "weaponsDoomScene": {
+    "text": "I seize my pistol and knife, storming next door in a rage. I kick open the garage door, bellowing, “Silence!” The teens gape, but Bernie charges out with his hunting rifle. In the mayhem, a shot rings out—whose, I can’t tell. Pain sears through me as I collapse, that kid’s awful riff mocking my last breaths. Uncle Chuckie, brought low by mortals? Disgraceful. Game Over!",
+    "image": {
+      "src": "scene9Image.png",
+      "alt": "Scene 9 Image"
+    },
+    "choices": []
+  },
+  "rocketDoomScene": {
+    "text": "I order a rocket launcher—overnight shipping, no less—and aim it at Bernie’s garage from my yard. The blast is magnificent, but the debris flies back, smashing through my roof. Flames erupt around me, my own house now my pyre. I, Uncle Chuckie, undone by my own brilliance? A bitter end. Game Over!",
+    "image": {
+      "src": "scene10Image.png",
+      "alt": "Scene 10 Image"
+    },
+    "choices": []
+  },
+  "radionicsScene": {
+    "text": "As the noise threatens to crack my sanity—and my aspirin bottle empties—a miracle: silence falls. No more guitar, just a babysitter yelling about lost handcuff keys somewhere else. Did Bernie finally ship that kid off? No—my radionics worked! The disruption pattern I set stirred chaos, prompting a neighbor on Bernie’s other side to call the cops. Blame falls on them, not me. I grin wolfishly, scribbling the triumph in my journal. The phone rings again—Brr-ringggg!",
+    "image": {
+      "src": "scene11Image.png",
+      "alt": "Scene 11 Image"
+    },
+    "choices": [
+      { "button": "Answer the phone", "action": "studentCallScene" }
+    ]
+  },
+  "studentCallScene": {
+    "text": "It’s Mr. Pabu, one of my tiresome students. He rambles about Sai Booboo, some oriental mystic with a lumpy forehead. “His third eye was the most powerful in the universe!” Pabu gushes. I snap, “Probably a tumor,” and hang up. Fools like him are why I avoid email too—doubtless it’s flooded with similar drivel. My stomach growls. “Where’s my damn pizza?” I mutter.",
+    "image": {
+      "src": "scene12Image.png",
+      "alt": "Scene 12 Image"
+    },
+    "choices": [
+      { "button": "Order pizza", "action": "pizzaScene" },
+      { "button": "Curse Pabu with a sigil", "action": "sigilDoomScene" }
+    ]
+  },
+  "sigilDoomScene": {
+    "text": "Pabu’s nonsense pushes me over the edge. I scratch out a sigil to silence him, but my anger muddies the lines. The sigil flares, and the magick backfires—twisting me into a grotesque heap. Sloppy work, Chuckie. A master like me should know better. Game Over!",
+    "image": {
+      "src": "scene13Image.png",
+      "alt": "Scene 13 Image"
+    },
+    "choices": []
+  },
+  "pizzaScene": {
+    "text": "Time for my reward—an extra-large pizza from Papa Luigi’s. It’s perfection, made sweeter by my victory over the noisy neighbors. Life needs spice, and I, Uncle Chuckie, provide it. This easy win has me plotting—what else can I conquer with my tricks? The world’s about to get a lot more entertaining! Thanks for joining my demo, mortals. Want more? The Vrilock Club awaits with free games aplenty!",
+    "image": {
+      "src": "images/scene14Image.png",
+      "alt": "Scene 14 Image"
+    },
+    "choices": [
+      { "button": "End demo", "action": "endScene" }
+    ]
+    
+  },
+  "endScene": {
+    "text": "That’s it for now! Crave more psionics fun? Join me at Vrilock.club, where wizards keep the magick high! Keep The Magick High!",
+    "image": {
+      "src": "scene15Image.png",
+      "alt": "Scene 15 Image"
+    }
+  }
+}

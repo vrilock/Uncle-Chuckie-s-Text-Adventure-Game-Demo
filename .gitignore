@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+out/
+dist/
+build/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Sensitive/temporary files
+.env
+*.log
+*.tmp
+*.bak
+*.swp
